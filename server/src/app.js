@@ -24,8 +24,7 @@ module.exports = class App {
             port: 3000
         },
         log: {
-            enabled: true,
-            writeToFile: 'xmrlog.txt',
+            enabled: false,
             level: 'debug',
             writeToConsole: false
         }
