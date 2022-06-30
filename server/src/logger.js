@@ -13,19 +13,15 @@ module.exports = class Logger {
     }
 
     log(value) {
-        this._logger.log('debug', value);
     }
 
     info(value) {
-        this._logger.info(value);
     }
 
     warn(value) {
-        this._logger.log(value);
     }
 
     error(value) {
-        this._logger.log('error', value);
     }
 
     _init(config) {
